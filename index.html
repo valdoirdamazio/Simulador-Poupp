@@ -1,18 +1,5 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Simulador Poupp – Conta de luz mais barata na Celesc</title>
-<meta name="description" content="Simule em segundos quanto você economiza na conta de luz com energia solar por assinatura. Sem obras, sem investimento, sem fidelidade.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://valdoirdamazio.github.io/Simulador-Poupp/">
-<meta property="og:title" content="Simulador Poupp – Conta de luz mais barata na Celesc">
-<meta property="og:description" content="Simule em segundos quanto você economiza na conta de luz com energia solar por assinatura. Sem obras, sem investimento, sem fidelidade.">
-<meta property="og:image" content="https://valdoirdamazio.github.io/Simulador-Poupp/preview.jpg">
-<meta property="og:image:secure_url" content="https://valdoirdamazio.github.io/Simulador-Poupp/preview.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="pt_BR">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://valdoirdamazio.github.io/Simulador-Poupp/preview.jpg">
-</head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Simulador Poupp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
@@ -315,7 +302,7 @@
         <div class="lado2">
           <p class="eyebrow">Passa a pagar</p>
           <span class="num-g" id="r-novo">—</span>
-          <span class="por">por mês, estimado</span>
+          <span class="por">por mês, somando as duas faturas</span>
         </div>
       </div>
     </div>
@@ -323,7 +310,7 @@
     <div class="painel painel-pad revela">
       <p class="eyebrow">Bandeira tarifária</p>
       <h2 style="margin-top:6px">Quando a bandeira sobe, sua economia sobe junto.</h2>
-      <p class="txt-sec">O desconto da Poupp vai de 15% a 25% sobre a energia, conforme a bandeira tarifária do mês. Toque para ver:</p>
+      <p class="txt-sec">São 15% sobre a energia na bandeira verde, e mais nos meses de bandeira amarela ou vermelha — a mesma conta da proposta oficial da Poupp. Toque para ver:</p>
       <div class="bandeiras" id="bandeiras" role="group" aria-label="Bandeira tarifária"></div>
     </div>
 
@@ -365,13 +352,17 @@
       <p class="resp">Não há fidelidade. As condições de saída constam no termo de adesão que você recebe antes de assinar.</p>
     </details>
     <details>
+      <summary>Vou receber duas contas?</summary>
+      <p class="resp">Sim. A fatura da Celesc continua chegando, já com os créditos de energia abatidos, e a Poupp envia a cobrança da energia com o desconto aplicado. Somando as duas, você paga menos do que paga hoje.</p>
+    </details>
+    <details>
       <summary>Por que o desconto não é sobre a conta inteira?</summary>
-      <p class="resp">Porque os créditos de energia abatem o consumo em kWh. Impostos, iluminação pública e o consumo mínimo que a Celesc cobra de toda ligação continuam na fatura. Por isso a simulação aplica o desconto só sobre a parcela de energia — o número fica mais próximo do que você vai ver na prática.</p>
+      <p class="resp">Porque os créditos de energia abatem o consumo em kWh. A contribuição de iluminação pública do município continua na fatura e, dependendo da cidade, ela pesa bastante. Por isso a simulação aplica o desconto só sobre a parcela de energia — o número fica mais próximo do que você vai ver na prática.</p>
     </details>
   </section>
 
   <div class="miudo" style="margin-top:22px">
-    <p><strong>Como esta simulação é feita:</strong> aplica-se a tabela de desconto da Poupp por bandeira tarifária — 15% na verde, 18% na amarela, 21% na vermelha I e 25% na vermelha II — sobre a parcela de energia da fatura, estimada em 61,9% do valor total conforme a média das faturas Celesc. Impostos, taxas e o consumo mínimo continuam sendo cobrados normalmente. O valor exato depende do seu consumo, da classe tarifária e da disponibilidade de créditos, e só é confirmado na proposta oficial da Poupp após a análise da sua fatura. Simulação sem valor contratual.</p>
+    <p><strong>Como esta simulação é feita:</strong> aplica-se 15% de desconto sobre a parcela de energia da fatura (as linhas de Consumo TE e Consumo TUSD), estimada em 76% do valor total — proporção aferida em faturas reais da Celesc. Nos meses de bandeira amarela ou vermelha a economia aumenta, porque o adicional da bandeira entra no cálculo. A contribuição de iluminação pública do município não entra no desconto. Depois da adesão você passa a receber duas faturas, a da Celesc e a da Poupp, e o valor acima é a soma das duas. O número exato depende do seu consumo e é confirmado na proposta oficial da Poupp após a análise da sua fatura. Simulação sem valor contratual.</p>
   </div>
 
   <footer class="rodape">
@@ -389,17 +380,21 @@
 <script>
 (function(){
   // ===== Parâmetros (mesmos da calculadora anterior) =====
-  var P_ENER = 0.619;   // parcela de energia (TE+TUSD) na fatura
+  var DESC   = 0.15;    // desconto Poupp sobre a energia (TE + TUSD)
+  var P_ENER = 0.76;    // parcela de energia no total da fatura (aferido em faturas Celesc B3)
   var MINIMO = 200;     // conta mínima atendida pela Poupp
   var WPP    = '5548998089975';
 
-  // Tabela oficial da Poupp: desconto sobre a parcela de energia, por bandeira
+  // k = custo da bandeira sobre a parcela de energia (tarifa Celesc vigente).
+  // economia = 15% da energia + a bandeira integral — mesma conta da proposta oficial da Poupp.
   var BANDEIRAS = [
-    {nome:'Verde',      pct:0.15, cor:'#2FA84F'},
-    {nome:'Amarela',    pct:0.18, cor:'#E9A21B'},
-    {nome:'Vermelha 1', pct:0.21, cor:'#DB3B2B'},
-    {nome:'Vermelha 2', pct:0.25, cor:'#A3261E'}
+    {nome:'Verde',       k:0,      cor:'#2FA84F'},
+    {nome:'Amarela',     k:0.0248, cor:'#E9A21B'},
+    {nome:'Vermelha I',  k:0.0587, cor:'#DB3B2B'},
+    {nome:'Vermelha II', k:0.1037, cor:'#A3261E'}
   ];
+  // desconto efetivo sobre a energia daquele mês, como aparece na proposta
+  function pctDe(b){ return (DESC + b.k) / (1 + b.k); }
 
   var sel = 0, valor = 0, revelado = false, mostrado = 0, raf = null;
   var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -409,7 +404,7 @@
   function $(id){ return document.getElementById(id); }
   function set(id, t){ $(id).textContent = t; }
   function tipo(){ return document.querySelector('input[name="tipo"]:checked').value; }
-  function economiaDe(i){ return valor * P_ENER * BANDEIRAS[i].pct; }
+  function economiaDe(i){ return valor * P_ENER * (DESC + BANDEIRAS[i].k); }
 
   var elBand = $('bandeiras');
   BANDEIRAS.forEach(function(b, i){
@@ -418,7 +413,7 @@
     btn.style.setProperty('--bcor', b.cor);
     btn.setAttribute('aria-pressed', i === sel ? 'true' : 'false');
     btn.innerHTML = '<span class="dot"></span><span class="nome">' + b.nome + '</span>'
-      + '<span class="pct">' + Math.round(b.pct * 100) + '%</span>'
+      + '<span class="pct">' + (pctDe(b) * 100).toFixed(1).replace('.', ',') + '%</span>'
       + '<span class="vlr">—</span>';
     btn.addEventListener('click', function(){
       sel = i;
@@ -431,7 +426,7 @@
   function calcula(){
     if (!revelado) return;
     var b = BANDEIRAS[sel], eco = economiaDe(sel);
-    set('r-rot', sel === 0 ? 'Economia estimada por mês' : 'Economia estimada por mês · bandeira ' + b.nome.toLowerCase());
+    set('r-rot', sel === 0 ? 'Economia estimada por mês' : 'Economia estimada por mês · bandeira ' + b.nome);
     set('r-ano',  brl.format(eco * 12));
     set('r-5',    brl.format(eco * 60));
     set('r-hoje', brl.format(valor));
@@ -460,7 +455,7 @@
     var msg = 'Olá, Valdoir! ' + (nome ? 'Aqui é ' + nome + '. ' : '')
       + 'Fiz a simulação da Poupp ' + (tipo() === 'empresa' ? 'para minha empresa' : 'para minha casa')
       + ': minha conta de luz é de ' + brl.format(valor) + ' por mês e a economia estimada foi de '
-      + brl.format(eco) + ' por mês' + (sel ? ' em bandeira ' + b.nome.toLowerCase() : '')
+      + brl.format(eco) + ' por mês' + (sel ? ' em bandeira ' + b.nome : '')
       + ' (' + brl.format(eco * 12) + ' por ano)' + (cid ? ', em ' + cid : '')
       + '. Quero receber a proposta oficial. Vou enviar minha fatura.';
     $('wpp').href = 'https://wa.me/' + WPP + '?text=' + encodeURIComponent(msg);
