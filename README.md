@@ -21,19 +21,19 @@ Sem obra, sem instalação de placas e sem investimento: você continua recebend
 
 | Parâmetro | Valor | Observação |
 |---|---|---|
-| Desconto por bandeira | **15% verde · 18% amarela · 21% vermelha 1 · 25% vermelha 2** | Tabela da Poupp, conforme a bandeira do mês |
+| Desconto por bandeira | **15% (bandeira verde) a 25% (bandeira vermelha)** | Tabela da Poupp, conforme a bandeira do mês |
 | Base do desconto | **Parcela de energia** da fatura | Não incide sobre impostos, taxas e iluminação pública |
-| Participação da energia na fatura | **61,9%** | Média estimada; varia de conta para conta |
+| Participação da energia na fatura | **76%** | Média estimada; varia de conta para conta |
 | Conta mínima | **R$ 200/mês** | Critério de atendimento da Poupp |
 
 **Fórmula:**
 
 ```
-Economia mensal = Valor da conta × 61,9% × desconto da bandeira
+Economia mensal = Valor da conta × 76% × desconto da bandeira
 Economia anual  = Economia mensal × 12
 ```
 
-Exemplo (bandeira verde): conta de R$ 1.000 → R$ 1.000 × 0,619 × 0,15 = **R$ 92,85/mês** (≈ R$ 1.114/ano).
+Exemplo (bandeira verde): conta de R$ 1.000 → R$ 1.000 × 0,76 × 0,15 = **R$ 114,00/mês** (≈ R$ 1.368/ano).
 
 ---
 
