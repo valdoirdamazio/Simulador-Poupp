@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf-8><title>Simule sua economia na conta de luz | Poupp Energia</title><meta name="description" content="Descubra em 10 segundos quanto você economiza na conta de luz da Celesc com energia limpa por assinatura. Sem obra, sem investimento."><meta property="og:type" content="website"><meta property="og:url" content="https://valdoirdamazio.github.io/Simulador-Poupp/"><meta property="og:title" content="Quanto sobra no seu bolso na conta de luz?"><meta property="og:description" content="Simule em 10 segundos sua economia na conta da Celesc. Sem obra, sem investimento, sem placa no telhado."><meta property="og:image" content="https://valdoirdamazio.github.io/Simulador-Poupp/preview.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="pt_BR"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#013837"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf-8><title>Simule sua economia na conta de luz | Poupp Energia</title><meta name="description" content="Descubra em 10 segundos quanto você economiza na conta de luz da Celesc com energia limpa por assinatura. Sem obra, sem investimento."><meta property="og:type" content="website"><meta property="og:url" content="https://valdoirdamazio.github.io/Simulador-Poupp/"><meta property="og:title" content="Quanto sobra no seu bolso na conta de luz?"><meta property="og:description" content="Simule em 10 segundos sua economia na conta da Celesc. Sem obra, sem investimento, sem placa no telhado."><meta property="og:image" content="https://valdoirdamazio.github.io/Simulador-Poupp/preview.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="pt_BR"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#013837"><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1031258630294523');fbq('track','PageView');</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1031258630294523&ev=PageView&noscript=1"/></noscript><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
@@ -290,6 +290,7 @@
       </div>
     </div>
     <p style="margin:0"><strong>Esta é uma simulação.</strong> O valor exato depende do seu consumo e da sua classe tarifária, e é confirmado na proposta oficial da Poupp, emitida depois da análise da sua fatura de energia. Atendimento para contas a partir de R$ 200 por mês na área da Celesc.</p>
+    <p style="margin:0;font-size:.72rem">Esta página usa cookies da Meta (Facebook/Instagram) para medir visitas e melhorar os anúncios. Não coletamos seu nome nem o valor da sua conta sem você enviar pelo WhatsApp.</p>
   </div>
 </div>
 
@@ -339,6 +340,10 @@
     $('menor').hidden = true;
   });
 
+  function lead(origem){ return function(){ if (window.fbq) fbq('track', 'Lead', {content_name: origem}); }; }
+  ['wpp','fone','fone2'].forEach(function(id){ $(id).addEventListener('click', lead('WhatsApp ' + id)); });
+  $('wpp-menor').addEventListener('click', lead('WhatsApp conta menor'));
+
   ['nome','cidade'].forEach(function(id){
     $(id).addEventListener('input', function(){ if (aberto) calcula(); });
   });
@@ -364,6 +369,7 @@
     aberto = true;
     elSaida.hidden = false;
     calcula();
+    if (window.fbq) fbq('track', 'ViewContent', {content_name: 'Simulacao'});
   });
 })();
 </script>
